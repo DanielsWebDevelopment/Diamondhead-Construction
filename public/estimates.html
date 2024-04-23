@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ======= Fontawesome CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ============ Bootstrap CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- ============ CSS StyleSheet  -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <title>Diamonhead Construction</title>
+</head>
+<body>
+    <!-- ============ Navbar Section  -->
+    <nav class="navbar" id="navbar">
+        <a href="./index.html" class="navbar_image">
+            <img src="./assets/MacBook Pro 14_ - 6.png" alt="logo"/>
+        </a>
+
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="nav__item">
+                <a href="#aboutUs">About</a>
+            </li>
+            <li class="nav__item">
+                <a href="#services">Services</a>
+            </li>
+            <li class="nav__item">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="./budgettracker.html" class="budget">Budget Tracker</a>
+          </li>
+        </ul>
+
+        <div class="navbar__toggle" id="navbar-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <div class="sidebar_nav" id="sidebar_nav">
+        <h4><span>Diamond</span> Head
+        <br />Construction</h4>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="nav__item">
+                <a href="index.html">About</a>
+            </li>
+            <li class="nav__item">
+                <a href="index.html">Services</a>
+            </li>
+            <li class="nav__item">
+                <a href="index.html">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="./budgettracker.html" class="budget">Budget Tracker</a>
+          </li>
+        </ul>
+    </div>
+
+    <!-- ============ Header Section  -->
+    <header class="estimates">
+        <button class="light-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"></path></svg>
+        </button>
+
+        <div class="estimates__container">
+            <div class="estimates__title">
+              <small><b>Price Estimates</b></small>
+              <h1>Price Estimates</h1>
+              <p class="calc">Labor Cost estimation calculator.</p>
+              <p><span>How it works:</span> To estimate labor costs for your 
+                construction project, input the hours and hourly 
+                rates for tasks such as carpentry, Flooring, 
+                Roofing work, and more. Click <span>"Calculate"</span> 
+                to receive the total labor cost instantly. 
+                Review the estimate, make adjustments if necessary.</p>
+            </div>
+
+            <div class="task-inputs">
+              <div class="task">
+                <label for="carpentry"><span>Carpentry</span> Hours:</label>
+                <input type="number" id="carpentry" placeholder="Add Hours ..." class="hours-input">
+                <label for="carpentry-rate">Rate ($/hour)</label>
+                <input type="number" id="carpentry-rate" placeholder="Add Rate ..." class="rate-input">
+              </div>
+              <div class="task">
+                <label for="roofing"><span>Roofing</span> Hours:</label>
+                <input type="number" id="roofing" placeholder="Add Hours ..." class="hours-input">
+                <label for="roofing-rate">Rate ($/hour)</label>
+                <input type="number" id="roofing-rate" placeholder="Add Rate ..." class="rate-input">
+              </div>
+              <div class="task">
+                <label for="concrete"><span>Concrete</span> Hours:</label>
+                <input type="number" id="concrete" placeholder="Add Hours ..." class="hours-input">
+                <label for="concrete-rate">Rate ($/hour)</label>
+                <input type="number" id="concrete-rate"  placeholder="Add Rate ..." class="rate-input">
+              </div>
+              <div class="task">
+                <label for="flooring"><span>Flooring</span> Hours:</label>
+                <input type="number" id="flooring" placeholder="Add Hours ..." class="hours-input">
+                <label for="flooring-rate">Rate ($/hour)</label>
+                <input type="number" id="flooring-rate" placeholder="Add Rate ..." class="rate-input">
+              </div>
+            </div>
+            <button id="calculate-btn" class="calulate-btn">Calcuate</button>
+            <div id="total-cost" class="total-cost"></div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="footer-col">
+          <div class="f-col">
+            <h4>Company</h4>
+            <div class="col">
+              <ul class="footer_links">
+                <li class="f-link">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="f-link">
+                  <a href="./index.html">About Us</a>
+                </li>
+                <li class="f-link">
+                  <a href="./index.html">Services</a>
+                </li>
+                <li class="f-link">
+                  <a href="./index.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="f-col">
+            <h4>Services</h4>
+            <div class="col">
+              <ul class="footer_links">
+                <li class="f-link">
+                  <a href="./carpentry.html">Carpentry</a>
+                </li>
+                <li class="f-link">
+                  <a href="./HomeRenos.html">Home Renovations</a>
+                </li>
+                <li class="f-link">
+                  <a href="./estimates.html">Price Estimates</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="f-col">
+            <h4>Projects</h4>
+            <div class="col">
+              <ul class="footer_links">
+                <li class="f-link">
+                  <a href="./projects.html">Project Gallery</a>
+                </li>
+                <li class="f-link">
+                  <a href="./HomeRenos.html">Project info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="c-logo">
+          <div class="f-c-logo">
+            <span><strong>DiamondHead Construction</strong></span>
+          </div>
+          <div class="copyright">
+            <small>Copyright &copy; 2024, DHConstruct. All rights Reserved.</small>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const sidebar = document.getElementById('sidebar_nav');
+
+    navbarToggle.addEventListener('click', () => {
+        navbarToggle.classList.toggle('active');
+        sidebar.classList.toggle('active');
+    });
+
+    // Selectors
+    // creating a variable to target the theme-toggle button. 
+    const themeToggleBtn = document.querySelector('.light-dark');
+
+    // creating a varibale to check if the theme key exist inside the localstorage
+    // when the page is first loaded. 
+
+    // state
+    const theme = localStorage.getItem('theme');
+
+    // On Mount
+    theme && document.body.classList.add(theme);
+
+    handleThemeToggle = () => {
+        document.body.classList.toggle('dark-mode');
+        // creating an if statement to check if local storage has key:value pairs making sure 
+        // its saved in the local storage for as the page first loads. 
+        if (document.body.classList.contains('dark-mode')) {
+            // if local storage contains key:value airs, light and dark mode. Then 
+            localStorage.setItem('theme', 'dark-mode');
+        } else {
+            // w'ell remove it from lcoal storage.
+            localStorage.removeItem('theme');
+        }
+    }
+
+    // Events
+    // adding an event listener to the class when clicked on the button.
+    themeToggleBtn.addEventListener('click', handleThemeToggle);
+
+  document.getElementById('calculate-btn').addEventListener('click', function() {
+    // grabbing the input values for the price estimartes. 
+    const carpentryHours = parseInt(document.getElementById('carpentry').value) || 0;
+    const roofingHours = parseInt(document.getElementById('roofing').value) || 0;
+    const concreteHours = parseInt(document.getElementById('concrete').value) || 0;
+    const flooringHours = parseInt(document.getElementById('flooring').value) || 0;
+
+    // implementing user defined rates. 
+    const userCarpentryRate = parseFloat(document.getElementById('carpentry-rate').value) || 0;
+    const userRoofingRate = parseFloat(document.getElementById('roofing-rate').value) || 0;
+    const userConcreteRate = parseFloat(document.getElementById('concrete-rate').value) || 0;
+    const userFlooringRate = parseFloat(document.getElementById('flooring-rate').value) || 0;
+
+
+    // calculating the total labor cost. 
+    const userCarpentryCost = carpentryHours * userCarpentryRate;
+    const userRoofingCost = roofingHours * userRoofingRate;
+    const userConcreteCost = concreteHours * userConcreteRate;
+    const userFlooringCost = flooringHours * userFlooringRate;
+
+    // displaying the total labor cost. 
+    const totalCost = userCarpentryCost + userRoofingCost + userConcreteCost + userFlooringCost;
+    document.getElementById('total-cost').innerHTML = `
+    <p>Total labor Cost: <span>$${totalCost.toFixed(2)} CAD</span></p>
+    `;
+});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
